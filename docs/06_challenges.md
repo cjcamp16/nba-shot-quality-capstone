@@ -1,7 +1,7 @@
 # Challenges
 
 **Rubric component:** #10 — Challenges
-**Owner:** TBD
+**Owner:** Cole (writing); team (content)
 **Status:** Not Started
 
 > Per the rubric: *Describing any challenges that you faced when collecting the data or performing the statistical analysis. How might they be mitigated in a future analysis?*

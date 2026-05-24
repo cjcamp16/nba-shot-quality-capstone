@@ -1,7 +1,7 @@
 # Methodology
 
 **Rubric component:** #6 — Methodology
-**Owner:** TBD
+**Owner:** Cole (writing); Marc (content)
 **Status:** Not Started
 
 > Per the rubric: *What statistical procedures did you use to analyze the data?*

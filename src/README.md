@@ -6,10 +6,10 @@ Reusable Python modules that our notebooks and scripts import from. Anything tha
 
 | Subfolder | What goes here | Primary owner |
 |---|---|---|
-| `pulls/` | Scripts that pull data from the NBA Stats API and Kaggle, cached in `data/raw/` | TBD |
-| `clean/` | Cleaning, ID standardization, and schema work; produces `data/interim/` tables | TBD |
-| `features/` | Feature engineering — shot context, player context, team context | TBD |
-| `models/` | Reusable code for training, evaluating, and running the model | TBD |
+| `pulls/` | Scripts that pull data from the NBA Stats API and Kaggle, cached in `data/raw/` | Germain |
+| `clean/` | Cleaning, ID standardization, and schema work; produces `data/interim/` tables | Germain |
+| `features/` | Feature engineering — shot context, player context, team context | Germain |
+| `models/` | Reusable code for training, evaluating, and running the model | Marc |
 
 ## Conventions
 

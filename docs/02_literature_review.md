@@ -1,7 +1,7 @@
 # Literature Review
 
 **Rubric component:** #4 — Literature Review
-**Owner:** TBD
+**Owner:** Cole
 **Status:** Not Started
 
 > Per the rubric: *Internet search of research that has been completed related to your data.*

@@ -6,9 +6,9 @@ All our Jupyter work lives here, sorted by phase of the project.
 
 | Subfolder | What goes here | Rubric component | Primary owner |
 |---|---|---|---|
-| `01_eda/` | Exploring every variable we plan to use in the model | #5 EDA | TBD |
-| `02_modeling/` | Building, tuning, and evaluating the model | #6 Methodology, #8 Analysis | TBD |
-| `03_analysis/` | Final results, RQ-specific deep dives, and the visualizations that go in the report | #7 Data Viz, #8 Analysis | TBD |
+| `01_eda/` | Exploring every variable we plan to use in the model | #5 EDA | Calder |
+| `02_modeling/` | Building, tuning, and evaluating the model | #6 Methodology, #8 Analysis | Marc |
+| `03_analysis/` | Final results, RQ-specific deep dives, and the visualizations that go in the report | #7 Data Viz, #8 Analysis | Calder (viz), Marc (analysis) |
 
 ## Naming convention
 

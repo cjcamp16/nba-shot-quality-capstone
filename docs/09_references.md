@@ -1,7 +1,7 @@
 # References
 
 **Rubric component:** #12 — References
-**Owner:** TBD
+**Owner:** Cole (writing); team (citations)
 **Status:** Not Started
 
 <!-- Add citations as we use them. APA format. Each citation should show up here the first time it gets referenced anywhere in docs/. -->

@@ -1,7 +1,7 @@
 # Project Plan
 
 **Rubric component:** #3 — Project Plan
-**Owner:** TBD
+**Owner:** Cole (writing); team (content)
 **Status:** Not Started
 
 > Per the rubric: *Overview of your Capstone project which should include a description of the data, proposed research question(s) and proposed methodology.*

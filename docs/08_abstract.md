@@ -1,7 +1,7 @@
 # Abstract / Executive Summary
 
 **Rubric component:** #12 — Abstract/Executive Summary
-**Owner:** TBD
+**Owner:** Cole
 **Status:** Not Started
 
 > Per the rubric: *High level summary of the purpose, data, and summary of your findings. This should include some information about the company that you have chosen as your dependent variable.*

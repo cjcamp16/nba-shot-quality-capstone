@@ -4,18 +4,20 @@ All the written pieces of our capstone report live here. Each file lines up with
 
 ## Rubric mapping
 
-| File | Rubric component | Owner | Status |
-|---|---|---|---|
-| `00_introduction.md` | Framing — database strategy + research questions | TBD | Draft |
-| `01_project_plan.md` | #3 Project Plan | TBD | Not Started |
-| `02_literature_review.md` | #4 Literature Review | TBD | Not Started |
-| `03_methodology.md` | #6 Methodology | TBD | Not Started |
-| `04_analysis.md` | #8 Analysis | TBD | Not Started |
-| `05_ethics.md` | #9 Ethical Recommendations & Implications | TBD | Not Started |
-| `06_challenges.md` | #10 Challenges | TBD | Not Started |
-| `07_recommendations.md` | #11 Recommendations & Next Steps | TBD | Not Started |
-| `08_abstract.md` | #12 Abstract / Executive Summary | TBD | Not Started |
-| `09_references.md` | #12 References | TBD | Not Started |
+Cole writes every doc. The "Content from" column shows where the substance comes from when it isn't all on Cole.
+
+| File | Rubric component | Writer | Content from | Status |
+|---|---|---|---|---|
+| `00_introduction.md` | Framing — database strategy + research questions | Cole | team | Draft |
+| `01_project_plan.md` | #3 Project Plan | Cole | team | Not Started |
+| `02_literature_review.md` | #4 Literature Review | Cole | Cole | Not Started |
+| `03_methodology.md` | #6 Methodology | Cole | Marc | Not Started |
+| `04_analysis.md` | #8 Analysis | Cole | Marc + Calder | Not Started |
+| `05_ethics.md` | #9 Ethical Recommendations & Implications | Cole | Cole | Not Started |
+| `06_challenges.md` | #10 Challenges | Cole | team | Not Started |
+| `07_recommendations.md` | #11 Recommendations & Next Steps | Cole | team | Not Started |
+| `08_abstract.md` | #12 Abstract / Executive Summary | Cole | Cole | Not Started |
+| `09_references.md` | #12 References | Cole | team | Not Started |
 
 ## Components handled elsewhere
 

@@ -1,7 +1,7 @@
 # Ethical Recommendations & Implications
 
 **Rubric component:** #9 — Ethical Recommendations and Implications
-**Owner:** TBD
+**Owner:** Cole
 **Status:** Not Started
 
 > Per the rubric: *Explanation of the implications of your research which will include recommendations that are based on an ethical approach.*
