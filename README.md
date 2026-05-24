@@ -27,37 +27,53 @@ nba-shot-quality-capstone/
 └── README.md
 ```
 
-## Setup (do this once)
+## Setup (do this once per machine)
 
 **Prerequisites:** Git, Python 3.14, VS Code, GitHub account with repo access.
 
-### Windows
+### Step 1 — Clone the repo through VS Code
+
+1. Open VS Code (no folder open).
+2. `Ctrl+Shift+P` → type **"Git: Clone"** → Enter.
+3. Paste the repo URL: `https://github.com/cjcamp16/nba-shot-quality-capstone.git`
+4. Pick a parent folder (e.g., `E:\Projects\`).
+5. Click **"Open"** in the popup once it finishes — VS Code reopens with the project loaded.
+
+### Step 2 — Set up the environment in the integrated terminal
+
+Open the terminal with `` Ctrl + ` `` (Ctrl + backtick). It's already in the project folder.
+
+**Windows:**
 
 ```powershell
-# One-time per machine - allow PowerShell to run the venv activate script
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-
-# Clone and set up
-git clone https://github.com/cjcamp16/nba-shot-quality-capstone.git
-cd nba-shot-quality-capstone
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
-### Mac / Linux
+**Mac / Linux:**
 
 ```bash
-git clone https://github.com/cjcamp16/nba-shot-quality-capstone.git
-cd nba-shot-quality-capstone
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Then open the folder in VS Code. When prompted, install the recommended extensions (Python, Jupyter).
+> **Note:** `python -m venv .venv` pauses silently for 30-60 seconds on `ensurepip`. Don't Ctrl+C — let it finish.
 
-> **Note:** `python -m venv .venv` will pause for 30-60 seconds on `ensurepip`. Don't Ctrl+C — let it finish.
+### Step 3 — Install the recommended extensions
+
+When VS Code shows the **"This workspace has extension recommendations"** banner, click **Install**. (Or `Ctrl+Shift+X` → search "@recommended" → install Python and Jupyter.)
+
+### Troubleshooting
+
+If `Activate.ps1` fails with "execution of scripts is disabled," run this once in the terminal (Windows only):
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+Then re-run the activate command.
 
 ## Daily Workflow
 
