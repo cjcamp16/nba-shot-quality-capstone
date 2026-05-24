@@ -17,14 +17,13 @@ from pathlib import Path
 from src.pulls._paths import KAGGLE_DIR, ensure_dirs
 
 # Dataset slugs (the "owner/dataset" part of the Kaggle URL).
-# If any of these fail with 404, look up the current slug at kaggle.com.
-SHOT_LOGS_SLUG = "dansbecker/nba-shot-logs"
-GAMES_DB_SLUG = "nathanlauga/nba-games"
-HISTORICAL_STATS_SLUG = "drgilermo/nba-players-stats"
+# Both verified current as of project setup. If a slug fails with 404,
+# look up the current one at kaggle.com.
+SHOT_LOGS_SLUG = "dansbecker/nba-shot-logs"           # 128k shots, 2014-15 only (prototyping)
+HISTORICAL_STATS_SLUG = "sumitrodatta/nba-aba-baa-stats"  # 1947-present, actively maintained
 
 DATASETS = {
     "shot_logs_2014_15": SHOT_LOGS_SLUG,
-    "games_database": GAMES_DB_SLUG,
     "historical_stats": HISTORICAL_STATS_SLUG,
 }
 

@@ -112,6 +112,5 @@ The raw shot-level data is **not** committed to git (too large). Each teammate r
 ## Sources
 
 - **NBA Stats API** (via `nba_api`) — primary source, shot-level data 2013-present
-- **Kaggle: NBA Shot Logs 2014-15** — prototyping
-- **Kaggle: NBA Games Database (Nathan Lauga)** — backup for game-level context
-- **Kaggle: NBA Stats 1950-present** — long-horizon player history
+- **Kaggle: NBA Shot Logs 2014-15** (`dansbecker/nba-shot-logs`) — prototyping
+- **Kaggle: NBA Stats 1947-present** (`sumitrodatta/nba-aba-baa-stats`) — long-horizon player history

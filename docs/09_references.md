@@ -9,9 +9,8 @@
 ## Data Sources
 
 - NBA Stats API, accessed via the `nba_api` Python package. https://github.com/swar/nba_api
-- Kaggle: NBA Shot Logs 2014-15.
-- Kaggle: NBA Games Database (Nathan Lauga).
-- Kaggle: NBA Stats 1950-present.
+- Kaggle: NBA Shot Logs (2014-15). https://www.kaggle.com/datasets/dansbecker/nba-shot-logs
+- Kaggle: NBA Stats (1947-present), maintained by sumitrodatta. https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats
 
 ## Literature
 

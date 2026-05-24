@@ -11,10 +11,9 @@ data/
 │   ├── games/             # games_{SEASON}.parquet, one per season
 │   ├── players.parquet    # all NBA players (historical + current)
 │   ├── teams.parquet      # all NBA teams (static)
-│   └── kaggle/            # the three supporting Kaggle datasets
-│       ├── shot_logs_2014_15/
-│       ├── games_database/
-│       └── historical_stats/
+│   └── kaggle/            # the two supporting Kaggle datasets
+│       ├── shot_logs_2014_15/   # dansbecker/nba-shot-logs (prototyping)
+│       └── historical_stats/    # sumitrodatta/nba-aba-baa-stats (1947-present)
 ├── interim/               # cleaned, ID-standardized tables (populated by src/clean/)
 └── processed/             # final enriched shot-level table (populated by src/build/)
 ```
