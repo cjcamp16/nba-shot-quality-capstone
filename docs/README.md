@@ -6,6 +6,7 @@ All the written pieces of our capstone report live here. Each file lines up with
 
 | File | Rubric component | Owner | Status |
 |---|---|---|---|
+| `00_introduction.md` | Framing — database strategy + research questions | TBD | Draft |
 | `01_project_plan.md` | #3 Project Plan | TBD | Not Started |
 | `02_literature_review.md` | #4 Literature Review | TBD | Not Started |
 | `03_methodology.md` | #6 Methodology | TBD | Not Started |
