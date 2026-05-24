@@ -1,15 +1,15 @@
-"""Download the three supporting Kaggle datasets.
+"""Download our two supporting Kaggle datasets.
 
-Prerequisites:
+Before this works:
 1. `pip install kaggle` (already in requirements.txt)
 2. A Kaggle API token at ~/.kaggle/kaggle.json (Windows: %USERPROFILE%\\.kaggle\\kaggle.json)
-   Get yours: kaggle.com -> account settings -> "Create New API Token"
+   Grab yours from kaggle.com -> account settings -> "Create New API Token"
 
 Each dataset lands in its own subfolder under data/raw/kaggle/.
-Idempotent: skips datasets that already have files extracted.
+Idempotent — already-downloaded datasets get skipped.
 
-If a dataset slug below is wrong (Kaggle URLs occasionally change),
-update the SLUG in the constant for that dataset and re-run.
+If one of the slugs below stops working (Kaggle URLs can change),
+look up the current one at kaggle.com and update the constant.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -17,9 +17,9 @@ from pathlib import Path
 from src.pulls._paths import KAGGLE_DIR, ensure_dirs
 
 # Dataset slugs (the "owner/dataset" part of the Kaggle URL).
-# Both verified current as of project setup. If a slug fails with 404,
-# look up the current one at kaggle.com.
-SHOT_LOGS_SLUG = "dansbecker/nba-shot-logs"           # 128k shots, 2014-15 only (prototyping)
+# Both are current as of project setup. If one 404s, look up the
+# current slug at kaggle.com and swap it in.
+SHOT_LOGS_SLUG = "dansbecker/nba-shot-logs"           # 128k shots, 2014-15 only (for prototyping)
 HISTORICAL_STATS_SLUG = "sumitrodatta/nba-aba-baa-stats"  # 1947-present, actively maintained
 
 DATASETS = {
@@ -29,7 +29,7 @@ DATASETS = {
 
 
 def _has_extracted_files(dest: Path) -> bool:
-    """True if the directory exists and contains at least one non-hidden file."""
+    """True if the folder exists and has at least one non-hidden file in it."""
     if not dest.exists():
         return False
     return any(p.is_file() and not p.name.startswith(".") for p in dest.iterdir())
@@ -37,8 +37,8 @@ def _has_extracted_files(dest: Path) -> bool:
 
 def download_dataset(slug: str, dest: Path) -> None:
     """Download and unzip one Kaggle dataset into `dest`."""
-    # Import here so the module can be imported without kaggle creds present
-    # (e.g. for help/inspection); credentials are only required at download time.
+    # Import here so the module can be loaded without Kaggle creds being set up
+    # (handy for inspection); creds only matter at actual download time.
     from kaggle import api as kaggle_api  # type: ignore
 
     dest.mkdir(parents=True, exist_ok=True)
@@ -58,7 +58,7 @@ def main() -> None:
             print(f"  Done: {name}")
         except Exception as exc:
             print(f"  FAILED: {name} ({slug}) -> {exc}")
-            print(f"    If this is a 404, verify the slug at kaggle.com and update kaggle_datasets.py")
+            print(f"    If that's a 404, check the slug at kaggle.com and update kaggle_datasets.py")
 
 
 if __name__ == "__main__":

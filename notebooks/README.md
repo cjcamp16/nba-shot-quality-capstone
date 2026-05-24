@@ -1,14 +1,14 @@
 # Notebooks
 
-All Jupyter analysis lives here, organized by project phase.
+All our Jupyter work lives here, sorted by phase of the project.
 
 ## Structure
 
-| Subfolder | Purpose | Rubric component | Primary owner |
+| Subfolder | What goes here | Rubric component | Primary owner |
 |---|---|---|---|
-| `01_eda/` | Exploratory analysis of every variable used in modeling | #5 EDA | TBD |
-| `02_modeling/` | Model development, tuning, evaluation | #6 Methodology, #8 Analysis | TBD |
-| `03_analysis/` | Results, RQ-specific deep dives, final visualizations | #7 Data Viz, #8 Analysis | TBD |
+| `01_eda/` | Exploring every variable we plan to use in the model | #5 EDA | TBD |
+| `02_modeling/` | Building, tuning, and evaluating the model | #6 Methodology, #8 Analysis | TBD |
+| `03_analysis/` | Final results, RQ-specific deep dives, and the visualizations that go in the report | #7 Data Viz, #8 Analysis | TBD |
 
 ## Naming convention
 
@@ -19,10 +19,10 @@ Examples:
 - `02_germain_defender_proximity.ipynb`
 - `01_cole_logistic_baseline.ipynb`
 
-This keeps notebooks sorted by creation order and makes the owner obvious from the filename.
+That way notebooks sort by creation order and you can tell at a glance who owns each one.
 
 ## Conventions
 
-- Keep notebooks reproducible: clear outputs before committing if outputs are noisy or large.
-- Import reusable functions from `src/` rather than copy-pasting between notebooks.
-- A notebook should answer a specific question or build a specific artifact — don't let them sprawl into "everything I tried this week."
+- Keep notebooks reproducible — clear noisy or huge outputs before committing.
+- Pull reusable functions out of notebooks and into `src/` so we're not copying and pasting between files.
+- One notebook should answer one specific question or build one specific artifact. Don't let them sprawl into "everything I tried this week."

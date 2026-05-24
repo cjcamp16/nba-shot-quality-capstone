@@ -1,7 +1,7 @@
 """Pull the list of NBA teams.
 
-Teams are static metadata bundled with nba_api, so this is an in-memory
-operation with no API call. Output: data/raw/teams.parquet
+Teams are static metadata that comes bundled with nba_api, so this doesn't
+actually hit the API — it just reads from memory. Output: data/raw/teams.parquet
 """
 from __future__ import annotations
 import pandas as pd
@@ -11,7 +11,7 @@ from src.pulls._paths import TEAMS_FILE, ensure_dirs
 
 
 def fetch_teams() -> pd.DataFrame:
-    """Return DataFrame of all NBA teams."""
+    """Give back a DataFrame of every NBA team."""
     return pd.DataFrame(teams.get_teams())
 
 

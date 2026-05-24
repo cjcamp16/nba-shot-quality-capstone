@@ -1,6 +1,7 @@
-"""Shared path constants for pull scripts.
+"""Shared paths for the pull scripts.
 
-Centralizes where raw data lands so individual modules don't reinvent it.
+One place to set where our raw data ends up, so the individual modules
+don't each reinvent it.
 """
 from __future__ import annotations
 from pathlib import Path
@@ -19,19 +20,19 @@ KAGGLE_DIR = RAW / "kaggle"
 
 
 def ensure_dirs() -> None:
-    """Create all raw data subdirectories if they don't exist."""
+    """Make sure all the raw data subdirectories exist."""
     for d in (SHOTS_DIR, GAMES_DIR, KAGGLE_DIR):
         d.mkdir(parents=True, exist_ok=True)
 
 
-# Default season range: 2013-14 (start of tracking-data era) through current.
-# Update DEFAULT_END_SEASON each year as new seasons complete.
+# Default season range: 2013-14 (start of the tracking-data era) through current.
+# Bump DEFAULT_END_SEASON every year as new seasons wrap up.
 DEFAULT_START_SEASON = 2013
-DEFAULT_END_SEASON = 2025  # represents the 2025-26 season
+DEFAULT_END_SEASON = 2025  # the 2025-26 season
 
 
 def season_str(start_year: int) -> str:
-    """Format a season as 'YYYY-YY' (NBA convention).
+    """Format a season the NBA way: 'YYYY-YY'.
 
     >>> season_str(2023)
     '2023-24'
@@ -40,5 +41,5 @@ def season_str(start_year: int) -> str:
 
 
 def all_seasons(start: int = DEFAULT_START_SEASON, end: int = DEFAULT_END_SEASON) -> list[str]:
-    """Return list of season strings from start to end inclusive."""
+    """Give back all season strings from start to end, inclusive."""
     return [season_str(y) for y in range(start, end + 1)]

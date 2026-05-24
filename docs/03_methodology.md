@@ -6,9 +6,9 @@
 
 > Per the rubric: *What statistical procedures did you use to analyze the data?*
 
-<!-- TODO: Document the modeling approach.
-- Data sources and integration (see notebooks/01_eda/ and src/pulls/)
-- Feature engineering decisions
-- Model choice (baseline logistic regression -> gradient-boosted trees)
-- Evaluation strategy (train/test split, metrics, cross-validation)
-- Interpretation tooling (SHAP, feature importance) -->
+<!-- Write up how we're approaching the modeling. Stuff to cover:
+- Where the data came from and how we put it together (see notebooks/01_eda/ and src/pulls/)
+- What features we used and why
+- Why we picked the model we did (probably logistic regression as a baseline, then gradient-boosted trees)
+- How we evaluated it (train/test split, metrics, cross-validation)
+- How we interpreted the results (SHAP, feature importance, etc.) -->

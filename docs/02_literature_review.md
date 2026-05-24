@@ -6,10 +6,10 @@
 
 > Per the rubric: *Internet search of research that has been completed related to your data.*
 
-<!-- TODO: Survey relevant prior work. Suggested starting points:
+<!-- Survey prior work that's relevant to what we're doing. Good places to start:
 - MIT Sloan Sports Analytics Conference papers (sloansportsconference.com)
 - Cervone et al. (2014) — "POINTWISE: Predicting Points and Valuing Decisions"
 - Kirk Goldsberry — SprawlBall
 - Dean Oliver — Basketball on Paper
 - FiveThirtyEight NBA archive, The Athletic, Cleaning the Glass
-Collect citations in docs/09_references.md as you go. -->
+As you go, drop citations into docs/09_references.md so they end up in the report. -->

@@ -1,16 +1,16 @@
 # References
 
-Drop reference materials here as you gather them — PDFs of papers, screenshots of articles, notes from books, etc.
+Drop reference materials in here as you find them — PDFs of papers, screenshots of articles, notes from books, whatever.
 
 ## Conventions
 
-- Filename should make the source obvious: `cervone_2014_pointwise.pdf`, `goldsberry_sprawlball_ch3_notes.md`, etc.
-- When you cite something in `docs/`, also add the citation to `docs/09_references.md`.
-- Don't commit PDFs larger than ~20 MB to git — link to them instead.
+- Name files so the source is obvious: `cervone_2014_pointwise.pdf`, `goldsberry_sprawlball_ch3_notes.md`, etc.
+- If you cite something in `docs/`, also add it to `docs/09_references.md` so it ends up in the final report.
+- Don't commit PDFs larger than ~20 MB — link to them instead.
 
-## Suggested starting points
+## Some places to start
 
-- MIT Sloan Sports Analytics Conference papers — search "expected points," "shot quality"
+- MIT Sloan Sports Analytics Conference papers — search "expected points" and "shot quality"
 - Cervone et al. (2014) — POINTWISE
 - Kirk Goldsberry — *SprawlBall*
 - Dean Oliver — *Basketball on Paper*

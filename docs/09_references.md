@@ -4,7 +4,7 @@
 **Owner:** TBD
 **Status:** Not Started
 
-<!-- TODO: Add citations as they're used. Suggested format: APA. Each citation should appear here the first time it's referenced anywhere in docs/. -->
+<!-- Add citations as we use them. APA format. Each citation should show up here the first time it gets referenced anywhere in docs/. -->
 
 ## Data Sources
 
@@ -14,4 +14,4 @@
 
 ## Literature
 
-<!-- Add as the literature review develops. -->
+<!-- Fill in as the literature review develops. -->

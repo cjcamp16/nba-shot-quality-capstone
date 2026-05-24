@@ -1,7 +1,7 @@
-"""Pull the full list of NBA players (historical + current).
+"""Pull every NBA player, historical + current.
 
 Uses CommonAllPlayers with is_only_current_season=0 so we get every player
-who has ever appeared in an NBA game. Output: data/raw/players.parquet
+who's ever played in an NBA game. Output: data/raw/players.parquet
 """
 from __future__ import annotations
 import time
@@ -12,7 +12,7 @@ from src.pulls._paths import PLAYERS_FILE, ensure_dirs
 
 
 def fetch_players() -> pd.DataFrame:
-    """Return DataFrame of all NBA players, historical and current."""
+    """Give back a DataFrame of every NBA player, past and present."""
     endpoint = commonallplayers.CommonAllPlayers(
         is_only_current_season=0,
         league_id="00",  # NBA

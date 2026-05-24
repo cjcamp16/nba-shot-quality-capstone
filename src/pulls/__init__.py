@@ -1,6 +1,6 @@
-"""Data pull scripts.
+"""Scripts that pull our data.
 
-Each module here is runnable standalone:
+Each module here can be run on its own:
     python -m src.pulls.nba_shots
     python -m src.pulls.nba_games
     ...

@@ -1,8 +1,8 @@
-"""Pull league-wide game logs per season.
+"""Pull the league-wide game logs, season by season.
 
-Uses LeagueGameLog, which returns one row per (team, game). We pull both
-Regular Season and Playoffs for each season. Idempotent: skips seasons
-already on disk.
+Uses LeagueGameLog, which gives us one row per (team, game). We grab both
+Regular Season and Playoffs for each season. Idempotent — already-pulled
+seasons get skipped.
 
 Output: data/raw/games/games_{SEASON}.parquet  (e.g. games_2023-24.parquet)
 """
@@ -13,12 +13,12 @@ from nba_api.stats.endpoints import leaguegamelog
 
 from src.pulls._paths import GAMES_DIR, all_seasons, ensure_dirs
 
-# Polite delay between API calls; NBA.com rate-limits aggressively
+# Sleep between API calls so we don't get rate-limited — NBA.com is strict
 SLEEP_SECONDS = 0.6
 
 
 def fetch_season_games(season: str) -> pd.DataFrame:
-    """Pull all games (regular season + playoffs) for one season."""
+    """Pull all the games (regular + playoffs) for one season."""
     frames = []
     for season_type in ("Regular Season", "Playoffs"):
         try:
@@ -30,7 +30,7 @@ def fetch_season_games(season: str) -> pd.DataFrame:
             df = endpoint.get_data_frames()[0]
             df["SEASON_TYPE"] = season_type
             frames.append(df)
-        except Exception as exc:  # broad catch; API can return varied errors
+        except Exception as exc:  # broad catch — the API can fail in weird ways
             print(f"  Warning: {season} {season_type} failed: {exc}")
         time.sleep(SLEEP_SECONDS)
     if not frames:

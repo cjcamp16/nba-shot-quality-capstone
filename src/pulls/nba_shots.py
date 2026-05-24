@@ -1,14 +1,14 @@
-"""Pull shot-detail data per season (the primary dataset).
+"""Pull the shot-detail data, season by season (this is our main dataset).
 
-Strategy: iterate every team within every season, pulling that team's shots
-for both Regular Season and Playoffs. ShotChartDetail returns shot-level
-rows with court coordinates, shot zone, distance, and outcome.
+How it works: we walk every team within every season and grab that team's
+shots for both Regular Season and Playoffs. ShotChartDetail gives us
+shot-level rows with court coordinates, shot zone, distance, and outcome.
 
-This is the slowest pull in the project: ~30 teams x 2 season types x N
-seasons calls, with a polite sleep between each. Expect ~30-40 seconds per
-season. The full 2013-present pull takes roughly 8-10 minutes.
+This is the slowest pull we have — about 30 teams x 2 season types per
+season, with a polite sleep between each call. Figure ~30-40 seconds per
+season, and the full 2013-present pull takes around 8-10 minutes.
 
-Idempotent: skips seasons already on disk.
+Idempotent — already-pulled seasons get skipped.
 
 Output: data/raw/shots/shots_{SEASON}.parquet  (e.g. shots_2023-24.parquet)
 """
@@ -24,10 +24,10 @@ SLEEP_SECONDS = 0.6
 
 
 def fetch_team_season_shots(team_id: int, season: str, season_type: str) -> pd.DataFrame:
-    """Pull one team's shots for one season + season type."""
+    """Grab one team's shots for one season + season type."""
     endpoint = shotchartdetail.ShotChartDetail(
         team_id=team_id,
-        player_id=0,  # 0 = all players on the team
+        player_id=0,  # 0 means all players on the team
         season_nullable=season,
         season_type_all_star=season_type,
         context_measure_simple="FGA",
@@ -36,7 +36,7 @@ def fetch_team_season_shots(team_id: int, season: str, season_type: str) -> pd.D
 
 
 def fetch_season_shots(season: str) -> pd.DataFrame:
-    """Pull every shot for one season by iterating teams."""
+    """Pull every shot for one season by walking through the teams."""
     team_ids = [t["id"] for t in static_teams.get_teams()]
     frames = []
     for i, team_id in enumerate(team_ids, 1):

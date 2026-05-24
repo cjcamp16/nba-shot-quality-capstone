@@ -1,6 +1,6 @@
 # Docs
 
-All written deliverables for the capstone report live here. Each file maps to one of the 12 required capstone components from the instructor's slides.
+All the written pieces of our capstone report live here. Each file lines up with one of the 12 required components from the instructor's slides.
 
 ## Rubric mapping
 
@@ -21,7 +21,7 @@ All written deliverables for the capstone report live here. Each file maps to on
 | Rubric component | Where it lives |
 |---|---|
 | #1 Large dataset (100k+ obs, 5+ vars) | `data/` (gitignored) + `src/pulls/` |
-| #2 Research Questions | Top of this README + `README.md` |
+| #2 Research Questions | Below + the top-level `README.md` |
 | #5 Exploratory Data Analysis | `notebooks/01_eda/` |
 | #7 Data Visualizations | `notebooks/03_analysis/` |
 | Source Code | `src/` |
@@ -30,11 +30,11 @@ All written deliverables for the capstone report live here. Each file maps to on
 
 1. What contextual factors best predict whether an NBA shot is made?
 2. Which players and teams consistently outperform their expected shot value, and what distinguishes them?
-3. How has shot success by court location changed across the 2013–present tracking era?
+3. How has shot success by court location changed across the 2013-present tracking era?
 4. Does shot-quality-adjusted player ranking differ noticeably from traditional efficiency metrics (FG%, eFG%, TS%)?
 
 ## Conventions
 
-- Use Markdown for everything in this folder.
-- Keep filenames in the existing numbered order so they sort by rubric position.
-- Write in full sentences — content here is destined for the final report.
+- Markdown for everything in this folder.
+- Keep filenames in their numbered order so they sort by rubric position.
+- Write in full sentences — what's in here is going to end up in the final report.

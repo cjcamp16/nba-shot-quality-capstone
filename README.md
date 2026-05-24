@@ -3,7 +3,7 @@
 **DAT 490 Capstone Project**
 **Team:** Cole Campbell, Calder Wyllie, Germain Meza, Marc Rajesh
 
-Modeling the probability that an NBA shot is made based on pre-shot context (location, defender distance, shot clock, shooter, game state) using shot-level data from 2013-14 to the present.
+We're modeling whether an NBA shot goes in based on the context around it — where it was taken, how much time was on the clock, how close the defender was, who took it, and how the game was going. Our data covers every field goal attempt from the 2013-14 season to the current season, which gives us roughly 2 million shots to work with.
 
 ## Research Questions
 
@@ -16,20 +16,23 @@ Modeling the probability that an NBA shot is made based on pre-shot context (loc
 
 ```
 nba-shot-quality-capstone/
-├── data/              # gitignored - pull locally via the API script
+├── data/              # gitignored - pull locally with the API scripts
 │   ├── raw/           # untouched API pulls + Kaggle files
 │   ├── interim/       # cleaned, ID-mapped tables
 │   └── processed/     # final enriched shot-level table
+├── docs/              # all written deliverables for the report
 ├── notebooks/         # EDA, modeling, and analysis notebooks
+├── refs/              # PDFs, notes, and other reference materials
 ├── src/               # reusable scripts (pulls, cleaning, model code)
 ├── .vscode/           # shared VS Code config
 ├── requirements.txt   # pinned Python dependencies
+├── TEAM.md            # who owns what
 └── README.md
 ```
 
 ## Setup (do this once per machine)
 
-**Prerequisites:** Git, Python 3.14, VS Code, GitHub account with repo access.
+**Prerequisites:** Git, Python 3.14, VS Code, GitHub account with access to the repo.
 
 ### Step 1 — Clone the repo through VS Code
 
@@ -41,7 +44,7 @@ nba-shot-quality-capstone/
 
 ### Step 2 — Set up the environment in the integrated terminal
 
-Open the terminal with `` Ctrl + ` `` (Ctrl + backtick). It's already in the project folder.
+Open the terminal with `` Ctrl + ` `` (Ctrl + backtick). You're already in the project folder.
 
 **Windows:**
 
@@ -59,11 +62,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> **Note:** `python -m venv .venv` pauses silently for 30-60 seconds on `ensurepip`. Don't Ctrl+C — let it finish.
+> **Heads up:** `python -m venv .venv` will sit silently for 30-60 seconds while it sets up pip. It's not frozen — let it finish.
 
 ### Step 3 — Install the recommended extensions
 
-When VS Code shows the **"This workspace has extension recommendations"** banner, click **Install**. (Or `Ctrl+Shift+X` → search "@recommended" → install Python and Jupyter.)
+When VS Code pops up the **"This workspace has extension recommendations"** banner, click **Install**. (Or `Ctrl+Shift+X` → search "@recommended" → install Python and Jupyter.)
 
 ### Troubleshooting
 
@@ -78,14 +81,14 @@ Then re-run the activate command.
 ## Daily Workflow
 
 ```bash
-# At the start of every session
+# Start of every session
 git pull
 pip install -r requirements.txt   # only matters if requirements.txt changed
 
 # Work on a branch, never directly on main
 git checkout -b yourname/short-description
 
-# When done
+# When you're done
 git add <files>
 git commit -m "Short summary of what you did"
 git push -u origin yourname/short-description
@@ -95,7 +98,7 @@ git push -u origin yourname/short-description
 
 ## Adding a New Package
 
-If you `pip install` something, also update `requirements.txt` so teammates get it:
+If you `pip install` something, also update `requirements.txt` so the rest of us get it:
 
 ```bash
 pip install <package>
@@ -107,7 +110,7 @@ git push
 
 ## Data
 
-The raw shot-level data is **not** committed to git (too large). Each teammate runs the API pull script locally — see `src/pulls/` once the script is added. Output lands in `data/raw/` and is gitignored.
+The raw shot-level data isn't committed to git — it's way too big. Everyone pulls it locally instead. See `data/README.md` and `src/pulls/` for how to do that. Once you've run the pull script, your `data/raw/` will match everyone else's.
 
 ## Sources
 
