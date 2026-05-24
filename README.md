@@ -7,10 +7,9 @@ We're modeling whether an NBA shot goes in based on the context around it — wh
 
 ## Research Questions
 
-1. What contextual factors best predict whether an NBA shot is made?
-2. Which players and teams consistently outperform their expected shot value, and what distinguishes them?
-3. How has shot success by court location changed across the 2013-present tracking era?
-4. Does shot-quality-adjusted player ranking differ noticeably from traditional efficiency metrics (FG%, eFG%, TS%)?
+1. Which players and teams consistently outperform their expected shot value, and what distinguishes them?
+2. How has shot success by court location changed across the 2013-present tracking era?
+3. Does shot-quality-adjusted player ranking differ noticeably from traditional efficiency metrics (FG%, eFG%, TS%)?
 
 ## Project Structure
 
