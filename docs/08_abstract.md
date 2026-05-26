@@ -7,4 +7,4 @@
 > Per the rubric: *High level summary of the purpose, data, and summary of your findings. This should include some information about the company that you have chosen as your dependent variable.*
 
 <!-- Write this last, once the rest of the report is settled.
-Heads up: the rubric line about a "company chosen as the dependent variable" doesn't really fit NBA league data. Worth confirming with the instructor whether that requirement is literal before we finalize this section. -->
+The "company" referenced in the rubric is the NBA itself — the organization/stakeholder our analysis is for. Include short background on the NBA as part of the abstract. Mirrors what's in 01_project_plan.md but scaled down. -->
