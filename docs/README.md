@@ -8,7 +8,7 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 
 | File | Rubric component | Writer | Content from | Status |
 |---|---|---|---|---|
-| `00_introduction.md` | Framing — database strategy + research questions | Cole | team | Draft |
+| `00_introduction.md` + `00_introduction.pdf` | Framing — database strategy + research questions | Cole | team | Submitted |
 | `01_project_plan.md` + `01_project_plan.pdf` | #3 Project Plan | Cole | team | Submitted |
 | `02_literature_review.md` | #4 Literature Review | Cole | Cole | Not Started |
 | `03_methodology.md` | #6 Methodology | Cole | Marc | Not Started |
