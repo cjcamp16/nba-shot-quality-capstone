@@ -1,33 +1,51 @@
 # Docs
 
-All the written pieces of our capstone report live here. Each file lines up with one of the 12 required components from the instructor's slides.
+All the written pieces of our capstone report live here. Each file lines up with one of the components in the official assignment spec (`dat490_assignment_spec.pdf`).
+
+**Course:** DAT 490 — Summer 2026 Session A. 600 points total.
+**Rough Draft due:** Sunday, June 21, 2026 at 11:59 PM
+**Final Report due:** Friday, June 26, 2026 at 11:59 PM
 
 ## Rubric mapping
 
 Cole writes every doc. The "Content from" column shows where the substance comes from when it isn't all on Cole.
 
-| File | Rubric component | Writer | Content from | Status |
-|---|---|---|---|---|
-| `00_introduction.md` + `00_introduction.pdf` | Framing — database strategy + research questions | Cole | team | Submitted |
-| `01_project_plan.md` + `01_project_plan.pdf` | #3 Project Plan | Cole | team | Submitted |
-| `02_literature_review.md` | #4 Literature Review | Cole | Cole | Not Started |
-| `03_methodology.md` | #6 Methodology | Cole | Marc | Not Started |
-| `04_analysis.md` | #8 Analysis | Cole | Marc + Calder | Not Started |
-| `05_ethics.md` | #9 Ethical Recommendations & Implications | Cole | Cole | Not Started |
-| `06_challenges.md` | #10 Challenges | Cole | team | Not Started |
-| `07_recommendations.md` | #11 Recommendations & Next Steps | Cole | team | Not Started |
-| `08_abstract.md` | #12 Abstract / Executive Summary | Cole | Cole | Not Started |
-| `09_references.md` | #12 References | Cole | team | Not Started |
+### Separately submitted components (325 pts)
+
+| File | Component | Points | Writer | Content from | Status |
+|---|---|---|---|---|---|
+| `00_introduction.md` + `00_introduction.pdf` | Framing — database strategy + research questions | — | Cole | team | Submitted |
+| `01_project_plan.md` + `01_project_plan.pdf` | Project Plan | 50 | Cole | team | Submitted |
+| `02_literature_review.md` | Literature Review | 50 | Cole | Cole | Not Started |
+| (need a file) | Research Questions — w/ reasoning | 25 | Cole | team | See note below |
+| `03_methodology.md` | Methodology | 50 | Cole | Marc | Not Started |
+| `04_analysis.md` | Analysis | 100 (Rough Draft) | Cole | Marc + Calder | Not Started |
+| `05_ethics.md` | Ethical Recommendations & Implications | 50 | Cole | Cole | Not Started |
+| `06_challenges.md` | Challenges | 25 (Rough Draft) | Cole | team | Not Started |
+| `07_recommendations.md` | Recommendations & Next Steps | 25 (Rough Draft) | Cole | team | Not Started |
+| `08_abstract.md` | Abstract / Executive Summary | 25 (Rough Draft) | Cole | Cole | Not Started |
+| `09_references.md` | References (APA) | 25 (Rough Draft) | Cole | team | Not Started |
+
+### Need to add
+
+| Component | Points |
+|---|---|
+| Exploratory Data Analysis (notebooks + writeup) | 50 |
+| Data Visualizations (notebooks + writeup) | 50 |
+| Final Report (incorporates all Rough Draft changes) | 75 |
+
+### Note on the Research Questions assignment
+
+The official rubric makes Research Questions a separate 25-point submission that "Identifies the research question(s) that you analyzed including reasons that you posed the question." Our `00_introduction.pdf` covers the database strategy and lists the three RQs but may not fully spell out the reasoning behind each one. The reasoning **is** in `01_project_plan.pdf` (each RQ has a "why this matters" paragraph). When the RQ assignment comes due, we may need a dedicated PDF that mirrors that RQ + reasoning content from the project plan.
 
 ## Components handled elsewhere
 
-| Rubric component | Where it lives |
+| Component | Where it lives |
 |---|---|
-| #1 Large dataset (100k+ obs, 5+ vars) | `data/` (gitignored) + `src/pulls/` |
-| #2 Research Questions | Below + the top-level `README.md` |
-| #5 Exploratory Data Analysis | `notebooks/01_eda/` |
-| #7 Data Visualizations | `notebooks/03_analysis/` |
-| Source Code | `src/` |
+| Large dataset (100k+ obs) | `data/` (gitignored) + `src/pulls/` |
+| Source Code (Appendix) | `src/` and `notebooks/` — goes in the Appendix of the final report PDF |
+| EDA notebooks | `notebooks/01_eda/` |
+| Data Visualizations | `notebooks/03_analysis/` |
 
 ## Research Questions
 
@@ -41,3 +59,4 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 - When a deliverable is finalized as a separate Word / PDF document (like `01_project_plan.pdf`), keep the matching `.md` file as a short pointer that links to it and tracks status.
 - Keep filenames in their numbered order so they sort by rubric position.
 - Write in full sentences — what's in here is going to end up in the final report.
+- The authoritative source on requirements is `dat490_assignment_spec.pdf`. Check there before assuming.
