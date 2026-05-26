@@ -2,10 +2,10 @@
 
 **Rubric component:** #3 — Project Plan
 **Owner:** Cole (writing); team (content)
-**Status:** Not Started
+**Status:** Submitted
 
 > Per the rubric: *Overview of your Capstone project which should include a description of the data, proposed research question(s) and proposed methodology.*
 
-<!-- Write the project plan here. The data description can come from docs/03_methodology.md once that's written, and the research questions are already in docs/README.md.
+The finalized project plan lives alongside this file as **[`01_project_plan.pdf`](01_project_plan.pdf)** — 11 pages covering the NBA organization profile, the analysis opportunity, all three research questions with hypotheses, our data sources, methodology, output mockups, campaign implementation, timeline & milestones, and references.
 
-Per the instructor, the project plan should also include background and context on the NBA as the stakeholder/organization our analysis is for — that's the "company" referenced in the rubric. -->
+Per the instructor, the plan is a living document — if we change direction on methodology or scope, we'll update the PDF and let her know.
