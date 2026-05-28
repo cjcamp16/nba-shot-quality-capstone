@@ -24,10 +24,18 @@ data/
 
 The Kaggle pull needs an API token. Everyone sets up their own — these never go in git.
 
-1. Go to https://www.kaggle.com/settings -> scroll to **API** -> click **Create New API Token**. A `kaggle.json` file downloads.
-2. Move it to the right folder:
-   - **Windows:** `%USERPROFILE%\.kaggle\kaggle.json` (create the `.kaggle` folder if it isn't there yet)
-   - **Mac/Linux:** `~/.kaggle/kaggle.json`, then `chmod 600 ~/.kaggle/kaggle.json`
+**Easiest path — use the helper script:**
+
+1. Go to https://www.kaggle.com/settings -> scroll to **API** -> click **Create New API Token**. Kaggle will either download a `kaggle.json` file or show you the username + key directly.
+2. From the project root, with the venv activated, run:
+   ```
+   python -m src.pulls.setup_kaggle
+   ```
+3. Paste your Kaggle username and API key when prompted. The script writes everything to the right place and tests that it works.
+
+**Manual fallback if you'd rather not run the helper:**
+- **Windows:** save `kaggle.json` to `%USERPROFILE%\.kaggle\kaggle.json` (create the `.kaggle` folder if it isn't there yet)
+- **Mac/Linux:** save `kaggle.json` to `~/.kaggle/kaggle.json`, then `chmod 600 ~/.kaggle/kaggle.json`
 
 ### Step 2 — Run all the pulls
 
