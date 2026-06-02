@@ -24,9 +24,18 @@ data/processed/
 *.feather
 *.csv.gz
 
+# Model checkpoints / large binaries
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.safetensors
+*.mp4
+
 # IDE / OS
 .DS_Store
 Thumbs.db
+desktop.ini
 *.swp
 *.swo
 
@@ -37,5 +46,21 @@ Thumbs.db
 
 # Secrets
 .env
+.env.*
+!.env.example
 *.key
+*.pem
+*service-account*.json
 credentials.json
+credentials*
+secrets/
+kaggle.json
+
+# Claude / assistant tooling (do not publish)
+.claude/
+CLAUDE.md
+*voice*.md
+.claude-mem/
+.claude.json
+settings.local.json
+automation-plan.md
