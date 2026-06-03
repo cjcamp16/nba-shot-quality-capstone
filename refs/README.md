@@ -6,11 +6,20 @@ The full annotated source list (with citations and why each one matters) is in `
 
 ## What's in here right now
 
-**Shot quality / expected possession value**
-- `cervone_2014_pointwise.pdf` — POINTWISE (Cervone et al., 2014)
-- `cervone_2014_multiresolution.pdf` — companion technical paper
+**Foundational NBA analytics context**
+- `four_factors_revisited_2023.pdf` — Poropudas & Halme (2023), revisits Oliver's Four Factors
+
+**Shot selection theory**
 - `skinner_2011_shot_selection.pdf` — Skinner's shot-selection optimization paper
-- `expected_points_above_average_2024.pdf` — recent Bayesian EPAA paper
+
+**Expected possession value and shot quality modeling**
+- `cervone_2014_pointwise.pdf` — POINTWISE (Cervone et al., 2014)
+- `cervone_2014_multiresolution.pdf` — technical companion paper
+
+**Modern player evaluation**
+- `expected_points_above_average_2024.pdf` — Bayesian EPAA paper
+- `kono_fujii_2024_off_ball_scoring.pdf` — off-ball scoring prediction with tracking data
+- `rethinking_player_evaluation_2025.pdf` — GAX residualized framework
 
 **Ethics**
 - `barocas_hardt_narayanan_fairmlbook.pdf` — Fairness and Machine Learning textbook

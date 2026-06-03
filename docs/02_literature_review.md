@@ -1,15 +1,11 @@
 # Literature Review
 
-**Rubric component:** #4 — Literature Review
+**Rubric component:** Literature Review (50 points)
 **Owner:** Cole
-**Status:** Not Started
+**Status:** Submitted
 
 > Per the rubric: *Internet search of research that has been completed related to your data.*
 
-<!-- Survey prior work that's relevant to what we're doing. Good places to start:
-- MIT Sloan Sports Analytics Conference papers (sloansportsconference.com)
-- Cervone et al. (2014) — "POINTWISE: Predicting Points and Valuing Decisions"
-- Kirk Goldsberry — SprawlBall
-- Dean Oliver — Basketball on Paper
-- FiveThirtyEight NBA archive, The Athletic, Cleaning the Glass
-As you go, drop citations into docs/09_references.md so they end up in the report. -->
+The finalized literature review lives alongside this file as **[`02_literature_review.pdf`](02_literature_review.pdf)** — a 6-page synthesis covering the rise of NBA analytics, shot selection theory, expected possession value modeling, modern player evaluation through shot quality, ethics in algorithmic player evaluation, and where our project fits in the field. Eight primary sources are cited throughout in APA style.
+
+Full APA reference list lives in [`09_references.md`](09_references.md).

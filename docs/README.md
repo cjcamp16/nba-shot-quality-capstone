@@ -16,7 +16,7 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 |---|---|---|---|---|---|
 | `00_introduction.md` + `00_introduction.pdf` | Framing — database strategy + research questions | — | Cole | team | Submitted |
 | `01_project_plan.md` + `01_project_plan.pdf` | Project Plan | 50 | Cole | team | Submitted |
-| `02_literature_review.md` | Literature Review | 50 | Cole | Cole | Not Started |
+| `02_literature_review.md` + `02_literature_review.pdf` | Literature Review | 50 | Cole | Cole | Submitted |
 | (need a file) | Research Questions — w/ reasoning | 25 | Cole | team | See note below |
 | `03_methodology.md` | Methodology | 50 | Cole | Marc | Not Started |
 | `04_analysis.md` | Analysis | 100 (Rough Draft) | Cole | Marc + Calder | Not Started |

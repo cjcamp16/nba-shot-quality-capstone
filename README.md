@@ -77,6 +77,23 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 Then re-run the activate command.
 
+Depending on the name of your files and the pathway to them, you may encounter a issue with the length. Local Windows File Explorer has a 260-character limit. This may occur after running the installation command. If you already cloned the repo, you can move it into a shorter pathway.
+
+### Move your existing folder
+Close VS Code. Find your current project folder. Cut the whole folder. Paste it into "C:\". Rename it to something shorter, e.g. nba.
+
+Open VS Code. Click File → Open Folder. Select  "C:\nba".
+
+Open a new terminal and reactivate the virtual environment
+
+From here, you need to re-run the code from above.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
 ## Daily Workflow
 
 ```bash
