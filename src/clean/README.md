@@ -8,7 +8,6 @@ This folder contains scripts used to clean and enrich the NBA shot data used thr
 | ---------------------- | ------------------------------------------------------------------------------------- |
 | `shots.py`             | Builds the cleaned shot dataset.                                                      |
 | `build_enriched.py`    | Builds the enriched modeling dataset.                                                 |
-| `validate_raw_data.py` | Validates raw parquet files and reports schema, missing values, and duplicate counts. |
 
 ---
 
