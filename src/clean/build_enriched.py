@@ -48,14 +48,14 @@ def main():
         left_on="PLAYER_ID",
         right_on="PERSON_ID",
         how="left"
-    )
+    ).drop(columns=["PERSON_ID"])
 
     enriched = enriched.merge(
         teams_small,
         left_on="TEAM_ID",
         right_on="id",
         how="left"
-    )
+    ).drop(columns=["id"])
 
     enriched = enriched.merge(
         games_small,
