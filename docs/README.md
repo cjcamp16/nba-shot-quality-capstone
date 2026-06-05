@@ -14,10 +14,9 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 
 | File | Component | Points | Writer | Content from | Status |
 |---|---|---|---|---|---|
-| `00_introduction.md` + `00_introduction.pdf` | Framing — database strategy + research questions | — | Cole | team | Submitted |
+| `00_introduction.md` + `00_introduction.pdf` | Introduction / Research Questions (covers both) | 25 | Cole | team | Submitted |
 | `01_project_plan.md` + `01_project_plan.pdf` | Project Plan | 50 | Cole | team | Submitted |
 | `02_literature_review.md` + `02_literature_review.pdf` | Literature Review | 50 | Cole | Cole | Submitted |
-| (need a file) | Research Questions — w/ reasoning | 25 | Cole | team | See note below |
 | `03_methodology.md` | Methodology | 50 | Cole | Marc | Not Started |
 | `04_analysis.md` | Analysis | 100 (Rough Draft) | Cole | Marc + Calder | Not Started |
 | `05_ethics.md` | Ethical Recommendations & Implications | 50 | Cole | Cole | Not Started |
@@ -36,7 +35,7 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 
 ### Note on the Research Questions assignment
 
-The official rubric makes Research Questions a separate 25-point submission that "Identifies the research question(s) that you analyzed including reasons that you posed the question." Our `00_introduction.pdf` covers the database strategy and lists the three RQs but may not fully spell out the reasoning behind each one. The reasoning **is** in `01_project_plan.pdf` (each RQ has a "why this matters" paragraph). When the RQ assignment comes due, we may need a dedicated PDF that mirrors that RQ + reasoning content from the project plan.
+The Introduction (`00_introduction.pdf`) is what we submitted for the Research Questions assignment. It covers both the database strategy and the three research questions, which together fulfill the 25-point requirement.
 
 ## Components handled elsewhere
 
