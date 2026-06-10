@@ -11,6 +11,15 @@ Reusable Python modules that our notebooks and scripts import from. Anything tha
 | `features/` | Feature engineering — shot context, player context, team context | Germain |
 | `models/` | Reusable code for training, evaluating, and running the model | Marc |
 
+## Current Modules
+
+### clean/
+
+| Module | Purpose |
+|----------|----------|
+| `shots.py` | Cleans and standardizes raw shot data and produces `data/interim/shots_clean.parquet`. |
+| `build_enriched.py` | Joins shots, players, teams, and games into an enriched modeling dataset and produces `data/processed/shots_enriched.parquet`. |
+
 ## Conventions
 
 - Plain `.py` files only — no notebooks in here.
