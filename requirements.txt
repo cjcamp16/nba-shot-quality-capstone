@@ -109,7 +109,7 @@ python-dateutil==2.9.0.post0
 python-docx==1.2.0
 python-json-logger==4.1.0
 python-slugify==8.0.4
-pywinpty==3.0.3
+pywinpty; sys_platform == "win32"
 PyYAML==6.0.3
 pyzmq==27.1.0
 referencing==0.37.0
