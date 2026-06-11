@@ -21,7 +21,7 @@ Cole writes every doc. The "Content from" column shows where the substance comes
 | `04_methodology.md` + `04_methodology.pdf` | Methodology | 50 | Cole | Marc | Submitted |
 | `03_methodology.md` | Methodology | 50 | Cole | Marc | Not Started |
 | `04_analysis.md` | Analysis | 100 (Rough Draft) | Cole | Marc + Calder | Not Started |
-| `05_ethics.md` | Ethical Recommendations & Implications | 50 | Cole | Cole | Not Started |
+| `05_ethics.md` + `05_ethics.pdf` | Ethical Recommendations & Implications | 50 | Cole | Cole | Submitted |
 | `06_challenges.md` | Challenges | 25 (Rough Draft) | Cole | team | Not Started |
 | `07_recommendations.md` | Recommendations & Next Steps | 25 (Rough Draft) | Cole | team | Not Started |
 | `08_abstract.md` | Abstract / Executive Summary | 25 (Rough Draft) | Cole | Cole | Not Started |

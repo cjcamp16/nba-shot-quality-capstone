@@ -33,7 +33,9 @@ Everything we're using for the lit review, methodology, and ethics sections. Eve
 
 | File | Citation | Why it matters |
 |---|---|---|
-| `barocas_hardt_narayanan_fairmlbook.pdf` | Barocas, S., Hardt, M., & Narayanan, A. (2023). *Fairness and Machine Learning: Limitations and Opportunities.* MIT Press. | The standard reference for ML fairness. Foundation for the ethics section. Free under CC BY-NC-ND 4.0. |
+| `barocas_hardt_narayanan_fairmlbook.pdf` | Barocas, S., Hardt, M., & Narayanan, A. (2023). *Fairness and Machine Learning: Limitations and Opportunities.* MIT Press. | The standard reference for ML fairness. Supporting reference for the ethics section. Free under CC BY-NC-ND 4.0. |
+| `thomas_uminsky_2020_problem_with_metrics.pdf` | Thomas, R. L., & Uminsky, D. (2020). *Reliance on Metrics is a Fundamental Challenge for AI.* arXiv:2002.08512. | Argues that overemphasizing a single metric in ML systems is fundamentally problematic and that a slate of metrics should be used instead. Core support for the ethics argument. |
+| (book — not a committed file) | Muller, J. Z. (2018). *The Tyranny of Metrics.* Princeton University Press. | The canonical case that single quantitative measures replace judgment and get treated as the whole picture. Anchors the ethics argument. Not freely downloadable; cited from the published book. |
 
 ## Conventions
 
