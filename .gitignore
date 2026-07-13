@@ -56,7 +56,7 @@ credentials*
 secrets/
 kaggle.json
 
-# Claude / assistant tooling (do not publish)
+# Local editor and tooling files
 .claude/
 CLAUDE.md
 *voice*.md
