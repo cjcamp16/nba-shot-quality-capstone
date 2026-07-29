@@ -18,6 +18,8 @@ Built as the DAT 490 Data Science Capstone at Arizona State University by a four
 
 A gradient-boosted tree model predicts the make probability of each shot from its context: court location, clock, defender pressure, shooter identity, and game state. The model reaches ~62% accuracy and ~0.64 ROC-AUC, comfortably above the no-information baseline, which is the point: shot outcomes are mostly variance, and the signal that *does* exist is what lets us price every shot's difficulty. A player's shots are then compared against what the model expected, and the gap between actual and expected makes is the shot-making skill estimate.
 
+We call this metric **SMOKE**, Shots Made Over Known Expectation.
+
 ## Read the full work
 
 - [Final Report (PDF)](docs/NBA%20Shot%20Quality%20Capstone%20-%20Final%20Report.pdf), the complete write-up: methodology, EDA, analysis, ethics, and recommendations
