@@ -53,6 +53,15 @@ Then see `data/README.md` and `src/` for the pull scripts. Once they've run, `da
 
 The capstone is complete (Summer 2026). The work is continuing beyond the course: extending the model past a single tracking season and hardening the validation, with the goal of publication at a sports analytics conference.
 
+## Erratum (September 2026)
+
+A full audit of this pipeline during the follow-on research found two defects in the graded version, recorded here so the academic record is honest. The code and report at tag `v1.0-capstone` are left as submitted.
+
+1. **Shooting team was misassigned on every home shot.** The Kaggle `MATCHUP` string always names the shooter's team first, but `extract_shooting_team` read it as "away @ home" and used the home/away flag to pick a side. Every home shot (half the data) was credited to the opponent, so the team-level table in the Analysis section (Los Angeles Clippers +78, Toronto +57, Minnesota +49) mixes each team's away shots with its opponents' home shots and should not be cited. Player-level results are unaffected by this bug.
+2. **Two game-outcome columns were model features.** `FINAL_MARGIN` and `W` (the game's final margin and result) are not knowable when a shot is released and were removed in the follow-on work. Their presence raised the model's expectation for players on winning teams and slightly suppressed the shot-making credit of the best players on the best teams; the headline rank correlation between the adjusted ranking and raw FG% moves from 0.39 to 0.44 once they are removed.
+
+The corrected pipeline, with cross-fitted expectations, the corrected team table, and a re-run validation battery, is the SMOKE research repository that continues this work.
+
 ## Sources
 
 - **NBA Stats API** (via `nba_api`): shot-level data, 2013 to present
