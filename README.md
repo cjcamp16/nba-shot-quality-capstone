@@ -51,7 +51,7 @@ Then see `data/README.md` and `src/` for the pull scripts. Once they've run, `da
 
 ## Status
 
-The capstone is complete (Summer 2026). The work continued beyond the course as **[SMOKE](https://github.com/smoke-nba-research/SMOKE)**: a corrected, cross-fitted pipeline with a second tracking season, an eight-test validation battery, and confidence intervals on every published value, released as a public, reproducible repository ahead of a conference submission.
+The capstone is complete (Summer 2026). The work continued beyond the course as **[SMOKE](https://github.com/smoke-nba-research/SMOKE)**: a corrected, cross-fitted pipeline with a second tracking season, an eight-test validation battery, and confidence intervals on every published value, released as a public, reproducible repository. Its abstract was submitted to the 2027 MIT Sloan Sports Analytics Conference in September 2026, co-authored by Cole Campbell, Marc Rajesh, and Calder Wyllie.
 
 ## Erratum (September 2026)
 
